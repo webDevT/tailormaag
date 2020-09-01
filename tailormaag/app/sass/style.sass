@@ -1,0 +1,338 @@
+@import "vars"
+@import "fonts"
+
+//start general style---
+body 
+	font-family: $roboto
+	font-size: 16px
+a 
+	text-decoration: none
+h1 
+	font-size: 45px
+	font-family: $pl
+	line-height: 1.4
+h2
+	font-size: 32px 
+	font-family: $pl
+	line-height: 1.4
+	text-align: center
+	div 
+		font-weight: 700
+	span
+		font-size: 28px
+h3 
+	font-size: 24px
+	font-family: $pl
+h4 
+	font-size: 20px
+	font-family: $pl
+	font-weight: 700
+h4.grey
+	color: #959595
+
+.item-title 
+	font-size: 1.4vw
+	line-height: 1.1
+	padding-bottom: 1vw 
+	position: relative 
+	font-family: $pl
+	span 
+		font-family: $roboto
+.item-title:before 
+	content: ''
+	position: absolute 
+	bottom: 0 
+	left: 0
+	background: #000 
+	height: 0.25vw
+	width: 3vw	
+	display: block
+.sub-title--bold 
+	font-weight: bold
+
+
+
+.button
+	color: $black
+	padding: 12px 15px
+	border: 1px solid #dcdcdc
+	border-radius: 3px
+	font-family: $roboto
+	font-weight: 500
+	letter-spacing: 2px
+	cursor: pointer
+	transition: all 0.3s
+	display: flex 
+	justify-content: center 
+	align-items: center
+	a 
+		color: $black
+		display: flex 
+		justify-content: center 
+		align-items: center
+.button:hover 
+	border-color: $black
+
+//end general style----
+//start main screen style
+.main-screen 
+	background: $pink
+	padding-bottom: 10vw
+	.row 
+		margin-top: 5vw
+
+	p 
+		font-size: 22px
+.main-screen__content
+	img 
+		width: 80%	
+
+.main-screen__content-text
+	height: 100% 
+	display: flex 
+	flex-direction: column 
+	justify-content: center
+.animation-delay-1
+	animation-delay: 0.2s
+.main-screen-p
+	animation-delay: 0.5s	
+.animation-delay-3
+	animation-delay: 1s
+//end main screen style
+
+//start header
+.header
+	padding-top: 2.604vw
+	padding-bottom: 2.604vw
+
+	.container
+		display: flex 
+		justify-content: space-between
+		align-items: center
+//end header
+
+.black-section 
+	background: #000
+	padding-top: 5.208vw
+	color: #fff
+.black-section
+	img 
+		width: 100%
+.black-section-content
+	height: 100% 
+	display: flex 
+	flex-direction: column 
+	justify-content: center
+	max-width: 90%
+	h2
+		max-width: 75%
+		margin-bottom: 20px
+		text-align: left
+//start media-content 
+.media-content 
+	text-align: center
+	padding: 5.208vw 0
+	img 
+		width: 75%
+		display: block 
+		margin: 0 auto 
+		margin-top: 3vw
+//end media-content
+
+//start pink section
+.pink-section
+	padding: 5.208vw 0
+	background: $pink
+	h2
+		text-align: center
+	h2 
+		margin-bottom: 5.208vw
+	h4 
+		margin-bottom: 14px
+//sample
+.sample
+	padding: 5.208vw 0
+	background: #000
+	color: #fff
+	h4 
+		text-transform: uppercase
+		letter-spacing: 3px
+		margin-bottom: 2.5vw
+	.row 
+		padding-top: 5.208vw
+	.slider 
+		margin-top: 5vw
+	.items_slider 
+		outline: none
+		min-height: 31vw
+		.slider__content
+			background: #fff
+			margin: 0 1.3vw
+			padding: 1.042vw
+			padding-bottom: 0.2vw
+			color: $black
+			height: 100%
+			min-height: 31vw
+		
+			img 
+				width: 100%
+
+.sample__header
+	text-align: center
+.slider-label
+	font-size: 0.8vw
+	text-transform: uppercase
+.slider__text
+	transform: translateY(-50%)
+	background: #fff
+	margin-left: 3vw
+	padding: 0.7vw
+	padding-bottom: 0
+	padding-right: 0
+
+//start text-section
+.text-section 
+	padding: 5.208vw 0
+	padding-bottom: 0.2vw
+	h2 
+		margin-bottom: 5.208vw
+
+.text-section__item
+	max-width: 80%
+	margin-bottom: 5vw
+	p
+		margin-bottom: 0
+	h4 
+		margin-bottom: 14px
+	ul 
+		padding-left: 18px
+
+//end text section
+.tailormag
+	background: $pink
+	padding: 5vw 0
+	.col-lg-3 
+		display: flex 
+		justify-content: center
+	h4.grey 
+		text-align: center
+		text-transform: uppercase
+		margin-bottom: 2vw
+
+	.row 
+		margin-top: 5vw
+.tailormag-item
+	width: 100%
+	display: block
+	color: $black
+	max-width: 236px
+	h4
+		margin-top: 1vw
+		min-height: 55px
+.tailormag-item:hover 
+	color: $black
+.item-icon 
+	position: absolute
+.tailormag__img
+	height: 360px
+	width: 100% 
+	display: block
+	overflow: hidden
+	position: relative
+
+	.tailormag-bg 
+		height: 100% 
+		min-width: 100%
+.icon-wrapper
+	background: #fff
+	position: absolute 
+	bottom: 0.5vw
+	left: 0.5vw
+	display: block
+	width: 3vw
+	height: 3vw
+	border-radius: 0.2vw
+	display: flex
+	justify-content: center 
+	align-items: center
+	padding: 1vw
+	display: flex 
+	justify-content: center
+	img 
+		width: 80%
+	
+//cta 
+.cta
+	background: #ffc2b9
+	padding: 7.813vw 0
+	position: relative
+	.container 
+		display: flex 
+		flex-direction: column
+		align-items: center
+	.button 
+		margin-top: 1.5vw
+		margin-bottom: 1.5vw
+.button--black 
+	background: $black 
+	color: #fff
+	border: 1px solid $black
+.button--black:hover 
+	background: #000
+.path1 
+	position: absolute 
+	top: 2vw
+	left: 0
+	width: 15vw
+.path2
+	position: absolute 
+	bottom: 2vw
+	right: 0
+	width: 15vw
+
+//end cta
+
+//start footer
+.footer 
+	background: $black
+	color: #fff
+	padding: 5vw 0
+	text-align: center
+	h2 
+		font-family: $roboto
+	.container 
+		display: flex 
+		flex-direction: column
+		align-items: center
+.footer__social
+	display: flex 
+	margin-bottom: 5vw
+	a 
+		display: flex 
+		justify-content: center 
+		align-items: center 
+		width: 50px 
+		height: 50px
+		border: 1px solid #fff
+		border-radius: 50%
+		margin: 0 5px
+		img 
+			max-width: 50%
+.footer__sub-title
+	font-size: 21px
+	margin-bottom: 25px
+.footer__links a
+	color: rgba(#fff, .25)
+	margin: 0 10px
+.footer__links a:hover 
+	color: #fff
+.footer__copy
+	margin-top: 10px
+	color: rgba(#fff, .25)
+//end footer
+
+
+@import "media"
+
+
+
