@@ -33,5 +33,23 @@ $('.slider').slick({
   ]
 });
 
+$('.contact-button').click(function(){
+  $('.popup').show();
+})
+$('.close').click(function(){
+  $('.popup').hide();
+})
+
+jQuery(function($){
+  $(document).mouseup(function (e){ 
+    var div = $(".popup-content"); 
+    var div2 = $(".popup");
+    if (!div.is(e.target) 
+        && div.has(e.target).length === 0) {
+      div2.hide();
+
+    }
+  });
+});
 
 });

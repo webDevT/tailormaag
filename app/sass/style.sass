@@ -331,6 +331,64 @@ h4.grey
 	color: rgba(#fff, .25)
 //end footer
 
+//popup
+.popup
+	position: fixed 
+	width: 100vw 
+	height: 100vh
+	max-height: 100vh
+	background: rgba(#000, 0.3)
+	top: 0 
+	left: 0
+	overflow-y: scroll 
+	display: none
+	h3 
+		padding: 30px 20px
+		padding-top: 50px
+	form 
+		padding: 20px
+
+
+	.close 
+		position: absolute 
+		top: 15px 
+		right: 20px
+		transform: rotate(45deg)
+		font-weight: 400
+		font-size: 30px
+		cursor: pointer
+
+
+.popup-content
+	width: 500px
+	max-width: 95%
+	border: 1px solid rgba(0,0,0,.2)
+	background: #fff
+	position: absolute 
+	top: 3vw
+	left: 50%
+	transform: translateX(-50%)
+input,
+textarea 
+	display: block 
+	width: 100%
+input 
+	height: 50px
+	margin-bottom: 30px
+	padding-left: 20px
+textarea 
+	height: 250px
+	padding-left: 1.2vw
+	padding-top: 0.8vw
+.form-footer
+	display: flex 
+	justify-content: flex-end
+	padding-top: 2.604vw
+
+
+
+
+//popup
 
 @import "media"
 
