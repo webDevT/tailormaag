@@ -180,7 +180,7 @@ h4.grey
 .sample__header
 	text-align: center
 .slider-label
-	font-size: 0.8vw
+	font-size: 0.7vw
 	text-transform: uppercase
 .slider__text
 	transform: translateY(-50%)
@@ -387,12 +387,354 @@ textarea
 	justify-content: flex-end
 	padding-top: 2.604vw
 
-
-
-
-
 //popup
 
+//start page header 
+.page-header 
+	padding-top: 10px 
+	padding-bottom: 10px
+	border-bottom: 1px solid #f1f1f1
+
+	.container 
+		display: flex 
+		justify-content: space-between
+		align-items: center
+		max-width: 1015px
+.logo-sm 
+	img
+		height: 40px 
+		width: 40px
+.leng-wrapper
+	display: flex
+.leng-tab:last-child 
+	margin-left: 5px
+.leng-tab
+	cursor: pointer
+.leng-tab.active 
+	border-bottom: 2px solid #000
+//end page header
+
+//start blog header
+.blog-header
+	padding-top: 6vw
+	.container
+		display: flex
+		max-width: 1010px
+.blog-header__logo 
+	border: 1px solid #f1f1f19e
+	width: 163px 
+	height: 163px 
+	position: relative
+	margin-right: 30px
+	img 
+		width: 100%
+.blog-header-label
+	position: absolute
+	text-transform: uppercase
+	font-size: 12px
+	font-weight: 500
+	transform: rotate(-90deg) translateX(-45%) translateY(-375%)
+	top: 0 
+	left: 0
+	
+.blog-header-label:before 
+	content: ''
+	height: 2px
+	width: 20px
+	background: #e8dacf
+	display: block
+	position: absolute
+	left: -3px
+	top: 50%
+	transform: translateY(-50%) translateX(-100%)
+.blog-header__content
+	p 
+		margin-bottom: 5px
+	h2 
+		display: flex 
+		align-items: center
+		img 
+			width: 18px
+			height: 18px
+			margin-left: 10px
+			margin-top: 8px
+.blog-header__icons
+	display: flex
+	margin-right: 20px
+	img 
+		width: 17px	
+.blog-header__bottom
+	display: flex
+	align-items: center
+	padding-top: 20px
+	a 
+		background: $beige
+		display: flex 
+		flex-direction: column 
+		align-items: center
+		padding: 4px
+		margin-right: 8px
+.button-radius 
+	font-size: 10px
+	letter-spacing: 2px
+	font-weight: bold
+	border: 1px solid #000
+	padding: 4px 10px
+	border-radius: 15px
+	cursor: pointer
+//popup blog 
+.popup-blog__content
+	background: #fff
+	position: absolute 
+	top: 10vw 
+	left: 50% 
+	transform: translateX(-50%)
+	padding: 20px
+	width: 306px
+	.blog-header 
+		padding-top: 40px
+		align-items: center
+		display: flex
+		padding-bottom: 30px
+	.blog-header__logo
+		width: 85px 
+		min-width: 85px
+		height: 85px
+		margin-right: 15px
+		display: flex 
+		justify-content: center 
+		align-items: center
+		img 
+			width: 80%
+	h2 
+		font-size: 18px
+		display: flex 
+		justify-content: flex-start
+		text-align: left
+		max-width: 120px
+		align-items: flex-start
+	form 
+		padding: 0
+	.blog-header__content
+		display: flex 
+		justify-content: flex-start
+	.form-row
+		display: flex
+		justify-content: space-between
+		input 
+			width: 48%
+	input
+		height: 40px
+		margin-bottom: 15px
+	.form-footer
+		padding-top: 10px
+		button 
+			font-size: 12px
+.tab-header
+	padding-top: 50px
+	padding-bottom: 50px
+	border-bottom: 1px solid #000
+	.container 
+		max-width: 1010px
+	a 
+		color: $black
+		margin-right: 20px
+	a.active 
+		border-bottom: 1px solid #000
+		padding-bottom: 4px
+	.tab.red 
+		color: #cf4242
+
+
+//end blog header
+
+//blog 
+.blog 
+	display: block
+	.container 
+		max-width: 1000px
+.blog-item__img
+	width: 100% 
+	height: 495px
+	overflow: hidden
+
+	img 
+		width: 100%
+.blog-item
+	margin-top: 50px
+	display: block
+.blog-item-date
+	font-size: 13px
+	position: relative
+	padding-top: 5px
+	display: block 
+	margin-top: 20px
+.blog-item-date:before 
+	content: ''
+	height: 4px 
+	width: 40px
+	background: $black
+	display: block
+	margin-bottom: 2px
+.blog-item-text
+	background: #fff 
+	padding: 20px
+	display: block
+	color: $black
+	margin-left: 20px
+	transform: translateY(-40px)
+.contact-section
+	border-top: 1px solid #000
+	border-bottom: 1px solid #000
+	padding-top: 30px 
+	padding-bottom: 30px
+	display: block
+	h2
+		text-align: left
+		font-size: 28px
+		span 
+			display: block
+			font-size: 25px
+	p 
+		font-size: 14px
+		margin-bottom: 0
+.blogo-items-footer
+	display: flex 
+	justify-content: center
+	margin-top: 30px
+	padding-bottom: 50px
+.see-more__btn
+	text-transform: uppercase 
+	display: flex 
+	width: 250px 
+	height: 60px 
+	justify-content: center 
+	align-items: center
+	color: #000 
+	font-size: 14px
+	font-weight: 700
+	border: 1px solid #000
+	span 
+		margin-left: 10px
+
+.tab-content
+	border-top: 1px solid #000 
+	h1 
+		border-top: 6px solid #000
+		display: inline-block
+		text-align: center
+		margin-bottom: 50px
+.tab-content__header
+	display: flex 
+	justify-content: center
+
+.favorite__item
+	display: flex
+.favorite__item
+	margin-bottom: 5vw
+	h3 
+		font-size: 2vw
+	img 
+		width: 100%
+	a,
+	span 
+		display: block
+		font-size: 0.9vw
+		svg 
+			margin-right: 0.5vw
+	span 
+		margin-bottom: 1.2vw
+
+.favorite__item-img
+	width: 45%
+	margin-right: 3%
+.favorite__item-text
+	width: 50%
+.page-footer
+	display: flex
+	justify-content: center
+	padding-bottom: 2vw
+.favorite__items-btn
+	text-transform: uppercase
+	color: $black
+	font-weight: 700
+	background: $beige
+	width: 13vw
+	display: flex
+	justify-content: center 
+	align-items: center
+	text-align: center
+	padding: 0.4vw 1vw
+.favorite__items-btn:hover 
+	color: #000
+.tab-content--mag
+	max-width: 900px
+	margin: 0 auto
+	margin-bottom: 5vw
+	h2 
+		text-align: left
+.tab-header--page
+	border-bottom: none
+.profil
+	padding-bottom: 5vw
+	max-width: 1079px
+	margin: 0 auto
+	img 
+		width: 100%
+	h3 
+		font-size: 20px
+		padding-bottom: 1vw
+
+	.slider-item
+		overflow: hidden
+		display: flex 
+		justify-content: center 
+		align-items: center
+		img 
+			width: 100%
+	.line 
+		width: 5vw
+		height: 3px 
+		background: #000
+		margin-bottom: 2vw
+	a 
+		font-weight: 600
+	a,
+	div 
+		font-size: 14px
+.slider-wrapper
+	position: relative
+	overflow: hidden
+	margin-top: 1vw
+.prev,
+.next 
+	position: absolute
+	top: 50%
+	color: #fff
+	transform: translateY(-50%)
+	cursor: pointer
+	transition: all 0.5s
+	svg 
+		width: 3vw 
+		height: 3vw
+		fill: rgba(#000, 0.7)
+.prev:hover,
+.next:hover
+	svg 
+		fill: #000
+.next 
+	right: 2%
+	transform: translateY(-50%) translateX(110%)
+
+
+.prev 
+	left: 2%
+	transform: translateY(-50%) translateX(-110%)
+.slider-wrapper:hover
+	.next
+		transform: translateY(-50%) translateX(0%)
+	.prev 
+		transform: translateY(-50%) translateX(-0%)
 @import "media"
 
 
