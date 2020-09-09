@@ -29,7 +29,8 @@ h4
 	font-weight: 700
 h4.grey
 	color: #959595
-
+.container 
+	max-width: 1140px
 .item-title 
 	font-size: 1.4vw
 	line-height: 1.1
@@ -57,7 +58,7 @@ h4.grey
 	padding: 12px 15px
 	border: 1px solid #dcdcdc
 	border-radius: 3px
-	font-family: $roboto
+	font-family: "Calibre",-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",Arial, sans-serif
 	font-weight: 500
 	letter-spacing: 2px
 	cursor: pointer
@@ -79,10 +80,18 @@ h4.grey
 	background: $pink
 	padding-bottom: 10vw
 	.row 
-		margin-top: 5vw
+		margin-top: 104px
+	h1 
+		margin-top: 43px
+		//max-width: 455px
 
 	p 
 		font-size: 22px
+	.col-lg-6:last-child 
+		display: flex 
+		justify-content: flex-end
+		img 
+			max-width: 455px
 .main-screen__content
 	img 
 		width: 80%	
@@ -102,13 +111,20 @@ h4.grey
 
 //start header
 .header
-	padding-top: 2.604vw
-	padding-bottom: 2.604vw
+	padding-top: 50px
+	padding-bottom: 50px
 
 	.container
 		display: flex 
 		justify-content: space-between
 		align-items: center
+	.button 
+		letter-spacing: 2px
+		line-height: 15px
+		font-size: 15px
+		margin-right: 6px
+		margin-top: 2px
+		height: 47px
 //end header
 
 .black-section 
@@ -132,8 +148,11 @@ h4.grey
 .media-content 
 	text-align: center
 	padding: 5.208vw 0
+	h2 
+		span 
+			font-size: 32px
 	img 
-		width: 75%
+		max-width: 962px
 		display: block 
 		margin: 0 auto 
 		margin-top: 3vw
@@ -202,10 +221,12 @@ h4.grey
 	margin-bottom: 5vw
 	p
 		margin-bottom: 0
+		font-family: "Calibre",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans
 	h4 
 		margin-bottom: 14px
 	ul 
 		padding-left: 18px
+		font-family: "Calibre",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans
 
 //end text section
 .tailormag
@@ -416,10 +437,12 @@ textarea
 
 //start blog header
 .blog-header
-	padding-top: 6vw
+	padding-top: 130px
 	.container
 		display: flex
 		max-width: 1010px
+	h2 
+		font-size: 37px
 .blog-header__logo 
 	border: 1px solid #f1f1f19e
 	width: 163px 
@@ -606,14 +629,15 @@ textarea
 .see-more__btn
 	text-transform: uppercase 
 	display: flex 
-	width: 250px 
+	width: 216px 
 	height: 60px 
 	justify-content: center 
 	align-items: center
 	color: #000 
-	font-size: 14px
+	font-size: 9px
 	font-weight: 700
 	border: 1px solid #000
+	font-family: 'brother-1816', 'BlinkMacSystemFont', -apple-system, 'Roboto', 'Lucida Sans'
 	span 
 		margin-left: 10px
 
@@ -658,13 +682,22 @@ textarea
 	text-transform: uppercase
 	color: $black
 	font-weight: 700
-	background: $beige
+	//background: $beige
 	width: 13vw
 	display: flex
 	justify-content: center 
 	align-items: center
 	text-align: center
 	padding: 0.4vw 1vw
+	position: relative
+.favorite__items-btn:before 
+	content: ''
+	position: absolute 
+	background: #ffde184a
+	left: 1vw
+	width: 48% 
+	top: 20%
+	height: 80%
 .favorite__items-btn:hover 
 	color: #000
 .tab-content--mag
@@ -735,6 +768,45 @@ textarea
 		transform: translateY(-50%) translateX(0%)
 	.prev 
 		transform: translateY(-50%) translateX(-0%)
+.black-sec-wrap
+	display: flex
+	//padding-left: 10vw
+.black-sec__container
+	width: 1280px
+	margin: 0 auto
+	.black-section-content
+		width: 480px
+		max-width: 480px
+		p 
+			max-width: 350px
+.container-tab-header
+	max-width: 1010px
+.profile-contact
+	font-weight: bold
+.follow-btn
+	position: relative
+.modal-menu
+	position: absolute 
+	top: 100%
+	left: 100%
+	background: #fff
+	width: 200px
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.5)
+	text-align: left
+	padding-top: 15px
+	border-radius: 5px
+	display: none
+
+	a 
+		background: transparent
+		text-align: left
+		justify-content: flex-start
+		align-items: flex-start
+		text-transform: uppercase 
+		color: #000
+.modal-menu.active
+	display: block
+
 @import "media"
 
 

@@ -40,12 +40,16 @@ $('.slider2').slick({
   
 });
 
-$('.contact-button, .follow-btn').click(function(){
+$('.contact-button').click(function(){
   $('.popup').show();
 })
 $('.close').click(function(){
   $('.popup').hide();
 })
+
+$('.follow-btn').click(function(){
+  $('.modal-menu').toggleClass('active');
+});
 
 jQuery(function($){
   $(document).mouseup(function (e){ 

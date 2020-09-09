@@ -3,15 +3,25 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
+@media only screen and (max-width : 1350px)
 	/**/
+	.main-screen .col-lg-6:last-child img
+		max-width: 382px
+	.black-sec__container
+		max-width: 100%
+		padding-left: 10vw
 
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	/**/
+	.container 
+		max-width: 720px
+	.main-screen .col-lg-6:last-child 
+		justify-content: center
+
 	.main-screen__content
-		padding-top: 10vw
+		padding-top: 0vw
 	.main-screen__content-text
 		padding-bottom: 5vw
 	.black-section-content
@@ -24,7 +34,7 @@
 		.slider__content 
 			min-height: 45vw
 	.slider-label
-		font-size: 1.8vw
+		font-size: 9px
 	.item-title
 		font-size: 2.4vw
 	.slider__text
@@ -52,16 +62,7 @@
 	.icon-wrapper
 		width: 5vw 
 		height: 5vw
-	.favorite__item h3
-		font-size: 3vw
-	.favorite__item a,
-	.favorite__item span
-		font-size: 1.5vw
-	.favorite__item a.favorite__items-btn
-		min-width: 25vw
-		height: 5vw
-		align-items: center
-		display: flex
+	
 	.profil 
 		.col-lg-6 
 			margin-bottom: 5vw
@@ -70,6 +71,80 @@
 		width: 10vw 
 		height: 10vw
 		transform: translateY(-50%) translateX(0)
+	.media-content 
+		h2 
+			font-size: 28px
+			span 
+				font-size: 28px
+		img 
+			max-width: 99%
+	.pink-section
+		.container 
+			width: 98%
+			max-width: 98% !important
+	.sample 
+		.container 
+			max-width: 95% 
+	.text-section h2
+		max-width: 540px 
+		margin: 0 auto
+		margin-bottom: 90px
+	.text-section 
+		padding-top: 100px
+	.tailormag-item
+		max-width: 100%
+	.tailormag 
+		padding-top: 100px
+		h2
+
+			margin-bottom: 80px
+			max-width: 280px
+		h4 
+			max-width: 280px
+	.cta
+		.container 
+			display: block 
+		h2 
+			max-width: 420px
+			margin-left: 0
+		p 
+			text-align: center
+		.button 
+			width: 96px 
+			height: 40px
+			margin: 25px auto
+			font-size: 13px
+			font-family: "Calibre",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif
+	.path1,
+	.path2 
+		display: none
+	.blog-item-text
+		h1 
+			max-width: 500px
+			line-height: 1
+	.page-container 
+		max-width: 75%
+		margin: 0 auto
+	.blog-header
+		padding-top: 30px
+	.blog-item:not(:first-child)
+
+		.blog-item-text h1
+			font-size: 19px
+			max-width: 200px
+	.contact-section h2
+		font-size: 24px
+		span 
+			font-size: 18px
+	.favorite__item a,
+	.favorite__item span
+		font-size: 1.2vw
+	.favorite__item-text
+		width: 75%
+
+
+
+
 
 	
 
@@ -79,6 +154,11 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	/**/
+	.header
+		padding-top: 25px 
+		padding-bottom: 0px
+	.main-screen h1 
+		margin-top: 0
 	.icon-wrapper
 		width: 8vw 
 		height: 8vw
@@ -99,10 +179,10 @@
 		padding-bottom: 0px
 	.blog-header
 		.container 
-			flex-direction: column
+			//flex-direction: column
 	.blog 
 		h1 
-			font-size: 6vw
+			font-size: 23px
 	.blog-item__img
 		height: 65vw
 	.blog-item-text
@@ -133,6 +213,46 @@
 		height: 15vw
 	.tab-content h1
 		padding-top: 5vw
+	.black-sec-wrap
+		flex-direction: column
+		
+	.black-sec__container .black-section-content
+		width: 100%
+		padding: 0 10vw
+	.black-sec__container
+		padding-left: 0
+	.media-content
+		padding-top: 100px 
+		padding-bottom: 0
+		h2 
+			padding: 0 25px
+		img 
+			margin-top: 50px
+	.pink-section 
+		padding-top: 100px 
+		padding-bottom: 50px
+		.col-md-4 
+			margin-bottom: 48px
+	.cta 
+		padding-top: 100px 
+		padding-bottom: 100px
+	.page-container 
+		max-width: 100%
+	.favorite__item a.favorite__items-btn
+		justify-content: flex-start
+		display: flex
+	.favorite__items-btn:before
+		top: 5.3vw
+		left: -2vw
+		height: 6vw
+		width: 20vw
+
+
+
+
+
+
+
 
 
 	
@@ -142,18 +262,18 @@
 @media only screen and (max-width : 575px)
 	/**/
 	body 
-		font-size: 4.2vw
+		font-size: 16px
 	h1 
-		font-size: 8.9vw
+		//font-size: 8.9vw
 	h2 
-		font-size: 6.5vw
+		//font-size: 6.5vw
 		span 
 			font-size: 5vw
 			line-height: 1
 	h3 
-		font-size: 5vw
+		//font-size: 5vw
 	h4 
-		font-size: 5vw
+		//font-size: 5vw
 
 	.main-screen p
 		font-size: 5vw
@@ -174,7 +294,7 @@
 		h4 
 			margin-bottom: 2vw
 		h2 
-			max-width: 60vw
+			//max-width: 60vw
 			margin: 0 auto
 		.row 
 			margin-top: 10vw
@@ -239,8 +359,9 @@
 		font-size: 5vw
 	.blog-header__logo
 		margin-right: 0
-		width: 30vw 
-		height: 30vw
+		width: 100px
+		height: 113px
+		min-width: 100px
 		margin: 0 auto
 	.blog-header-label
 		font-size: 2.3vw
@@ -251,14 +372,24 @@
 	.blog-header__content
 		display: flex
 		flex-direction: column
-		align-items: center
+		align-items: flex-start
+		text-align: left
+		padding-left: 15px
 		h2 
-			text-align: center
 			display: flex 
-			justify-content: center
-			margin-top: 3vw
+			//justify-content: center
+			//margin-top: 3vw
+			font-size: 22px
+			word-spacing: nowrap
+			min-width: 220px
+
 		p 
-			text-align: center
+			//text-align: center
+			font-size: 15px
+		a 
+			font-size: 15px
+	.blog-header__bottom
+		padding-top: 6.5px
 	.popup-blog__content
 		.blog-header__logo
 			margin-left: 0
@@ -266,12 +397,19 @@
 			font-size: 14px
 		input 
 			font-size: 12px
+	.blog-header .container
+		max-width: 100%
+		overflow: hidden
+	.blog-header__bottom a
+		background: transparent
 	.tab-header
 		padding-bottom: 20px
 		.container
 			display: flex 
 			justify-content: space-between
-			max-width: 92%
+			max-width: 100%
+			padding-left: 0 
+			padding-right: 0
 		a 
 			margin-right: 0
 	.blog-item-date
@@ -290,6 +428,28 @@
 		.col-lg-6,
 		.col-lg-3 
 			margin-bottom: 30px
+	.media-content
+		padding-top: 100px 
+		padding-bottom: 0
+	.tailormag
+		h2,
+		h4 
+			margin: 0 auto
+		h2 
+			padding-bottom: 80px
+	.tailormag-item
+		h4 
+			margin-left: 0
+			margin-top: 20px 
+			margin-bottom: 9px
+	.cta 
+		padding-top: 100px 
+		padding-bottom: 100px
+		h2 
+			margin: 0 auto
+
+
+	
 
 
 
