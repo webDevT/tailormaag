@@ -687,18 +687,28 @@ textarea
 	display: flex
 	justify-content: center 
 	align-items: center
-	text-align: center
+	text-align: left
 	padding: 0.4vw 1vw
 	position: relative
-.favorite__items-btn:before 
-	content: ''
-	position: absolute 
-	background: #ffde184a
-	left: 1vw
-	width: 48% 
-	top: 20%
-	height: 80%
+.favorite__items-btn:before
+	content: ""
+	position: absolute
 	z-index: -1
+	top: 13px
+	left: 8px
+	right: 0
+	bottom: 0
+	background: #ffde184a
+	-webkit-transform-origin: 0 50%
+	transform-origin: 0 50%
+	transition-property: -webkit-transform
+	transition-property: transform
+	transition-property: transform, -webkit-transform
+	transition-duration: .3s
+	transition-timing-function: ease-out
+	height: 17px
+	width: 20%
+	top: 10px!important
 .favorite__items-btn:hover 
 	color: #000
 .tab-content--mag
@@ -880,8 +890,296 @@ textarea
 .page-pagination__next:hover 
 	color: #000
 
+.tab-content--page
+	border-top: none
+.pablication-content
+	margin-bottom: 40px
+	.container 
+		max-width: 980px
+	img 
+		width: 100%
+
+	.container 
+		border-top: 1px solid #000
+		padding-top: 100px
+.pablication-content-title
+	font-family: $pl
+	font-size: 37px
+.bublication__text
+	font-size: 15px 
+	font-family: $pl
+	max-width: 480px
+.pablication-content-wrapper
+	padding-left: 30px
+.publication-info
+	margin-bottom: 80px
+	.container
+		background: #f1f1f161
+		padding: 20px
+.publication-info
+	a 
+		display: block
+.publication-info
+	a 
+		font-size: 12.8px
+		color: #000
+		margin-top: 4px
+	span 
+		font-size: 12.8px
+.publication-info__title
+	font-family: $pl
+	font-size: 32px
+	margin-bottom: 16px 
+	margin-top: 15px
+	span 
+
+		font-size: 24px
+.tab-header--page
+	padding-bottom: 20px
+	
+.blog-header--page-flex
+	.container 
+		display: flex 
+		justify-content: space-between
+.blog-header--page
+	padding-top: 30px
+.publication__label
+	font-size: 12px
+	color: #4a76d9
+.pablication-content-wrapper
+	position: relative
+	
+.publication__label
+	display flex
+	flex-direction: row
+	position: relative
+	position: absolute
+	transform: rotate(-90deg) translateY(0%) translateX(0%)
+	font-family: brother-1816, system-ui, -apple-system, Roboto, "Lucida Sans"
+	left: -50px
+	top: 120px
+	font-weight: 600
+	text-transform: uppercase
+	font-weight: bold
+	padding-right: 30px
+
+.publication__label:before
+	content: ''
+	background: #4a76d9
+	width: 24px 
+	height: 1px
+	position: absolute
+	right: 0
+	top: 50%
+.tab-header--page-link
+	font-family: $pl
+	font-size: 12px
+	text-transform: uppercase
+	font-weight: bold
+	position: relative
+.tab-header--page-link:before
+	content: ""
+	position: absolute
+	z-index: -1
+	top: 13px
+	left: 8px
+	right: 0
+	bottom: 0
+	background: #ffde184a
+	-webkit-transform-origin: 0 50%
+	transform-origin: 0 50%
+	transition-property: -webkit-transform
+	transition-property: transform
+	transition-property: transform, -webkit-transform
+	transition-duration: .3s
+	transition-timing-function: ease-out
+	height: 17px
+	width: 39%
+	top: 10px
+.favorite__item
+	position: relative
+.publication__label
+	//letter-spacing: 1px
+// .publication__label--item
+// 	position: absolute
+// 	transform: rotate(-90deg) translateY(0%) translateX(0%)
+// 	font-family: brother-1816, system-ui, -apple-system, Roboto, "Lucida Sans"
+// 	left: -90px
+// 	top: 0px
+// 	font-weight: 600
+// 	text-transform: uppercase
+// 	font-weight: bold
+// 	padding-right: 30px
+// 	font-size: 12px
+// 	color: #4a76d9
+// 	transform-origin: 0
+// .publication__label--item:before
+// 	content: ''
+// 	background: #4a76d9
+// 	width: 24px 
+// 	height: 1px
+// 	position: absolute
+// 	right: 0
+// 	top: 50%
+.type
+	position: absolute
+	-ms-transform: rotate(-90deg)
+	-webkit-transform: rotate(-90deg)
+	transform: rotate(-90deg)
+	transform-origin: 0
+	top: 110px
+	left: -9px
+	text-transform: uppercase
+	font-family: brother-1816, system-ui, -apple-system, Roboto, "Lucida Sans"
+	font-size: 12px
+	font-weight: 900
+	color: #4a76d9
+	float: left
+	width: 71Px
+	text-align: right
+.type:before
+	content: ""
+	position: absolute
+	z-index: -1
+	top: 9px
+	right: -30px
+	bottom: 0
+	background: #4a76d9
+	-webkit-transform-origin: 0 50%
+	transform-origin: 0 50%
+	transition-property: -webkit-transform
+	transition-property: transform
+	transition-property: transform, -webkit-transform
+	transition-duration: .3s
+	transition-timing-function: ease-out
+	height: 1px
+	width: 24px
+.favorite__item-text
+	min-width: 210px
+	h3
+		font-size: 25px
+	a 
+		font-size: 12px
+		font-family: $pl
+	a.black 
+		color: $black
+	span 
+		font-size: 12px 
+		font-family: $pl
+	p 
+		font-size: 15px
+.favorite__item-text .favorite__items-btn
+	white-space: nowrap
+	font-family: 'brother-1816', 'BlinkMacSystemFont', -apple-system, 'Roboto', 'Lucida Sans'
+	font-weight: bold !important
+.blog-item:first-child 
+	h1 
+		margin-bottom: 0
+	.blog-item-text
+		border-left: 1px solid #000
+		padding-bottom: 0
+	.blog-item-date
+		margin-top: 0
+		transform: translateY(60%)
+		font-size: 9px
+		padding-top: 13px
+	.blog-item-date:before 
+		margin-top: 0px
+		margin-bottom: 10px
+.blog-item .blog-item-date
+	font-size: 9px
+	padding-top: 13px
+.blog-item .blog-item-date:before 
+		margin-top: 0px
+		margin-bottom: 10px
+.blog-item:not(:first-child)
+	.blog-item-text h1
+		font-size: 19px
+		max-width: 200px
+	.blog-item-text
+		max-width: 253px
+.scroll-top 
+	position: fixed 
+	bottom: 30px 
+	right: 30px
+	display: flex
+	display: none
+	justify-content: center
+	align-items: center
+	background: #fff
+	width: 36px
+	height: 36px
+	z-index: 99
+	border-radius: 18px
+	-moz-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1)
+	-webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1)
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1)
+	-moz-transition: box-shadow .25s cubic-bezier(0.165, 0.84, 0.44, 1)
+	-o-transition: box-shadow .25s cubic-bezier(0.165, 0.84, 0.44, 1)
+	-webkit-transition: box-shadow .25s cubic-bezier(0.165, 0.84, 0.44, 1)
+	transition: box-shadow .25s cubic-bezier(0.165, 0.84, 0.44, 1)
+	a 
+		width: 100% 
+		height: 100% 
+		display: flex 
+		justify-content: center 
+		align-items: center
+	svg 
+		transform: rotate(90deg)
+.scroll-top svg .thb-arrow-head
+	-moz-transform: translateX(5px)
+	-ms-transform: translateX(5px)
+	-webkit-transform: translateX(5px)
+	transform: translateX(5px)
+	transition: all 0.3s
+.scroll-top svg .thb-arrow-line
+	-moz-transform-origin: 100% center
+	-ms-transform-origin: 100% center
+	-webkit-transform-origin: 100% center
+	transform-origin: 100% center
+	-moz-transform: translateX(5px) scale(0, 1)
+	-ms-transform: translateX(5px) scale(0, 1)
+	-webkit-transform: translateX(5px) scale(0, 1)
+	transform: translateX(5px) scale(0, 1)
+	transition: all 0.3s
+.scroll-top:hover
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2)
+	svg .thb-arrow-head
+		transform: translateX(0px)
+	svg .thb-arrow-line
+		transform: translateX(0px) scale(1, 1)
+
+#cd-nav 
+	display: none
+#cd-main-nav ul
+	padding-left: 0
+	li 
+		display: flex
+		justify-content: center
+		//padding: 0 12px
+
+		a 
+			border-radius: 4px
+			margin: 10px auto
+			padding: 6px 10px !important
+			display: block !important
+
+		svg 
+			max-width: 100% 
+			height: auto 
+			//width: 30px
+			fill: #fff
+		.svg-wrap
+			width: 30px
+			height: 30px
+			display: block
+			margin: 0 auto
+
+.test 
+	//min-height: 3000px
 
 @import "media"
+
 
 
 
