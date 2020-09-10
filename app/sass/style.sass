@@ -826,6 +826,7 @@ textarea
 	color: #000
 	img 
 		max-width: 100%
+		width: 100%
 	.slider__text
 		padding-top: 14px 
 		padding-left: 20px
@@ -1175,9 +1176,205 @@ textarea
 			display: block
 			margin: 0 auto
 
-.test 
-	//min-height: 3000px
+.all-article--single
+	margin-top: 90px
+.pablication-content--single
+	.container 
+		padding-top: 0
+.cat-portrait
+	font-weight: 600
+	white-space: nowrap
+	color: #000
+	font-size: 10px
+	font-family: brother-1816, system-ui, -apple-system, Roboto, "Lucida Sans"
+	text-transform: uppercase
+	margin-left: 5px
+	position: relative
+.cat-portrait:before
+	content: ""
+	position: absolute
+	z-index: -1
+	top: 6px
+	left: 18px
+	right: 14px
+	bottom: 0
+	background: #e8dacf
+    -webkit-transform-origin: 0 50%
+    transform-origin: 0 50%
+    transition-property: -webkit-transform
+    transition-property: transform
+    transition-property: transform, -webkit-transform
+    transition-duration: .3s
+    transition-timing-function: ease-out
+    height: 10px
+    width: 29%
+.cat-portrait:hover 
+	color: #000
+.post-title
+	padding-bottom: 25px
+	margin-top: 20px
+.hashtag
+	font-family: 'brother-1816', 'BlinkMacSystemFont', -apple-system, 'Roboto', 'Lucida Sans'
+	font-weight: 900
+	font-size: 10px
+	padding-bottom: 0px
+	position: relative
+	padding-left: 35px
+.hashtag::before
+	content: ''
+	position: absolute
+	top: 7px
+	height: 1px
+	border-bottom: 1px solid #e8dacf
+	width: 27px
+	left: 0px
+.post-img 
+	max-width: 100%
+	margin-bottom: 30px
+.post-content
+	padding-left: 50px
+	color: #000
+	position: relative
+	display: flex
+	img 
+		width: 100%
+	h4 
+		font-size: 24px 
+		font-family: $pl 
+		font-weight: 400
+		padding-right: 40px
+		margin-top: 30px 
+		margin-bottom: 30px
+		color: #000
+	h3 
+		font-size: 24px 
+		font-family: $pl 
+		text-transform: uppercase
+		font-weight: 600
+	p 
+		text-align: justify
+.post-sub-title
+	font-size: 14.6px 
+	font-family: $pl
+	font-weight: bold
+	margin-bottom: 12px
+.post-text
+	font-size: 15px 
+	font-family: $pl
+.sub-title-cursive
+	font-size: 16px 
+	font-family: $pl 
+	font-weight: 300 
+	font-style: italic
+	margin-bottom: 18px
+.wpb_wrapper
+	position: relative
+	margin-bottom: 20px
+	h6 
+		font-size: 13px 
+		font-weight: 700 
+		font-family: $pl
+		margin-bottom: 2px
+.wpb_wrapper:before
+	content: ""
+	width: 48px
+	height: 2px
+	background: #000
+	display: table
+	margin-bottom: 12px
+.margin-top
+	margin-top: 40px
+.sidebar_inner
+	background: #e8dacf
+	text-align: left
+	padding: 20px
+	ul,
+	.horaire 
+		list-style: none 
+		font-size: 14px 
+		font-family: $pl
+		padding-left: 0
+	.sub
+		font-size: 24px
+		line-height: 1
+		font-weight: 400
+	h2 
+		text-align: left
+		font-size: 25px 
+		font-family: $pl
+		font-weight: 400
+		
+.thb-slidetype-entry
+	font-size: 32px 
+	line-height: 1
+.margin-bottom
+	padding-bottom: 40px
+.coordonnees
+	margin-bottom: 20px
+.share-article
+	position: sticky 
 
+	top: 100px
+	transform: translateX(-40px)
+	display: flex 
+	flex-direction: column
+	align-self: flex-start
+	svg 
+		max-height: 18px
+		height: 18px
+	.google
+		svg 
+			height: 22px
+			max-height: 22px
+	a
+		background: transparent
+		position: relative
+		width: 24px
+		height: 51px
+		line-height: 1
+		display: flex 
+		justify-content: center 
+		align-items: center
+
+		span
+			position: absolute
+			display: block
+			top: 8px!important
+			right: -20px
+			background: #e8dacf!important
+			border-left: 0px solid #fff
+			border-bottom: 0px solid #fff
+			height: 20px
+			min-width: 20px
+			text-align: center
+			line-height: 20px
+			padding: 0 3px
+			color: #000
+			font-size: 10px
+			font-weight: 600
+			border-radius: 90px
+	a:hover 
+		background: #000
+		svg 
+			fill: #fff
+	a:before
+		content: ""
+		position: absolute
+		z-index: -1
+		top: 21px
+		left: -5px
+		right: 0
+		bottom: 0
+		background: #e8dacf
+		-webkit-transform-origin: 0 50%
+		transform-origin: 0 50%
+		transition-property: -webkit-transform
+		transition-property: transform
+		transition-property: transform, -webkit-transform
+		transition-duration: .3s
+		transition-timing-function: ease-out
+		height: 13px
+		width: 83%
 @import "media"
 
 
